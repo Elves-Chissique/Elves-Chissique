@@ -1,0 +1,105 @@
+@charset "utf8";
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Lobster&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
+body{
+    width: 100%;
+}
+
+.Image_Fixed{
+    background-color:black;
+    background-image: url('../Images/Restaurante-2.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    background-size:cover;
+    width:100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.Image_Fixed > h1{
+    background-color: black;
+    text-align: center;
+    opacity: 0.7;
+    color:white;
+    position: fixed;
+    width: 100%;
+    font-family: cursive;
+    font-family: 'lobster';
+    font-size:35px ;
+}
+
+.Image_Fixed-2{
+    background-color:black;
+    background-image: url('../Images/Flile_de_Frango.jpg');
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    background-size:cover;
+    width:100%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.Event_content{
+    width: 100%;
+    padding: 1em;
+    text-align: justify;
+}
+
+
+.Event_content > p{
+    width: 63%;
+    margin: auto;
+    font-size: 16.5pt;
+    margin-bottom: 2em;
+    color:rgba(44, 43, 43, 0.76);
+}
+
+
+.Event_content-2{
+    color: brown;
+}
+.Event_content  > h1{
+    text-align: center;
+    letter-spacing: 0.5em;
+    font-size: 256%;
+    border-bottom: 1px solid black;
+    width: 60vw;
+    margin: auto;
+    margin-bottom: .8em;
+}
+
+.Paragraph_content{
+    width: 40vw;
+    text-align: justify;
+    display: inline-block;
+    float: left;
+    padding-left: 1em;
+}
+
+.Paragraph_image{
+    background-image:url('../Images/vista-frontal-de-garrafas-de-vinho-com-taca-de-vinho-na-superficie-escura.jpg') ;
+    width: 55vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    display:inline-block;
+    float: right;
+}
+
+.Event_content-2  > h2{
+    text-align: center;
+}
+strong{
+    font-size: 25pt;
+    margin-bottom: 6em;
+    margin: auto;
+    display: inline-block;
+    width: 40vw;
+    text-align: center;
+    font-family: cursive;
+}
