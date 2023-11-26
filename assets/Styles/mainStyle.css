@@ -93,15 +93,6 @@ body{
 }
 
 
-.Event_content > p{
-    width: 63%;
-    margin: auto;
-    font-size: 16.5pt;
-    margin-bottom: 2em;
-    color:rgba(44, 43, 43, 0.76);
-}
-
-
 .Event_content-2{
     color: brown;
 }
@@ -146,3 +137,20 @@ strong{
     text-align: center;
     font-family: cursive;
 }
+
+p.service{
+    font-family: cursive;
+    width: 70%;
+    margin: auto;
+    font-size: 16.5pt;
+    margin-bottom: 2em;
+    color:rgba(44, 43, 43, 0.76);
+}
+
+.Event_content > h2{
+    margin-left: 3.5em;
+    border-bottom: 2px solid black;
+    width: 14em;
+}
+
+
