@@ -86,32 +86,20 @@ body{
     background-attachment: fixed;
 }
 
-.Event_content{
+div.Event_content{
     width: 100%;
     padding: 1em;
     text-align: justify;
 }
 
-
-.Event_content-2{
-    color: brown;
-}
 .Event_content  > h1{
     text-align: center;
     letter-spacing: 0.5em;
     font-size: 256%;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(223, 217, 217);
     width: 60vw;
     margin: auto;
     margin-bottom: .8em;
-}
-
-.Paragraph_content{
-    width: 40vw;
-    text-align: justify;
-    display: inline-block;
-    float: left;
-    padding-left: 1em;
 }
 
 .Paragraph_image{
@@ -128,7 +116,72 @@ body{
 .Event_content-2  > h2{
     text-align: center;
 }
-strong{
+p.service{
+    font-family: cursive;
+    width: 80%;
+    margin: auto;
+    font-size: 13pt;
+    margin-bottom: 2em;
+    color:rgba(44, 43, 43, 0.76);
+}
+
+#catering-introduction{
+    width: 100%;
+    font-size: 15.5pt;
+    border: none;
+    display: inline-block;
+    margin-bottom: 1.5em;
+}
+
+span.catering{
+    display: inline-block;
+    width: 30%;
+    cursor: pointer;
+    height: 12em;
+    padding: .2em;
+    overflow: hidden;
+    position: relative;
+}
+span#cateringFoto img{
+    width: 290px;
+    height: 200px;
+    text-align: center;
+    margin: auto;
+    transition: 2s ease;
+    border-radius: 1.2em;
+    margin-top: 0px;
+    margin-left: 0px;
+    border: 2px solid #088080;
+}
+
+#cateringText{
+    width: 290px;
+    height: 0px;
+    opacity: 0;
+    text-align: center;
+    margin: auto;
+    border-radius: 2em;
+    vertical-align: middle;
+    color: #fff;
+    font-size: 0px;
+    padding: .3em;
+}
+
+.Event_content > h2{
+    margin-left: 3.5em;
+    border-bottom: 2px solid black;
+    width: 14em;
+}
+
+.beverages{
+    width: 40vw;
+    text-align: justify;
+    display: inline-block;
+    float: left;
+    padding-left: 1em;
+    color: brown;
+}
+.beverages > strong#champane{
     font-size: 25pt;
     margin-bottom: 6em;
     margin: auto;
@@ -136,21 +189,6 @@ strong{
     width: 40vw;
     text-align: center;
     font-family: cursive;
-}
-
-p.service{
-    font-family: cursive;
-    width: 70%;
-    margin: auto;
-    font-size: 16.5pt;
-    margin-bottom: 2em;
-    color:rgba(44, 43, 43, 0.76);
-}
-
-.Event_content > h2{
-    margin-left: 3.5em;
-    border-bottom: 2px solid black;
-    width: 14em;
 }
 
 
