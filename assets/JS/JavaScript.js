@@ -3,18 +3,35 @@ let catering1 =  window.document.querySelector('span#catering1')
 let catering2 =  window.document.querySelector('span#catering2')
 let catering3 =  window.document.querySelector('span#catering3')
 
+let delivery1 =  window.document.querySelector('span#delivery1')
+let delivery2 =  window.document.querySelector('span#delivery2')
+let delivery3 =  window.document.querySelector('span#delivery3')
+
 /* Chamada por querySelector para Catering Foto e Texto (Mudança automática de foto e textos)*/
 let cateringFoto =  window.document.querySelector('span#cateringFoto')
 var cateringText =  window.document.querySelector('span#cateringText')
 let cateringFoto2 =  window.document.querySelector('span#cateringFoto2')
-var cateringText2 =  window.document.querySelector('span#cateringText2')
+var cateringText3 =  window.document.querySelector('span#cateringText2') //Serviços de catering
 let cateringFoto3 =  window.document.querySelector('span#cateringFoto3')
 var cateringText3 =  window.document.querySelector('span#cateringText3')
 
+let deliveryFoto1 =  window.document.querySelector('span#deliveryFoto1')
+var deliveryText1 =  window.document.querySelector('span#deliveryText1')
+let deliveryFoto2 =  window.document.querySelector('span#deliveryFoto2') //Serviços de dlivery
+var deliveryText2 =  window.document.querySelector('span#deliveryText2')
+let deliveryFoto3 =  window.document.querySelector('span#deliveryFoto3')
+var deliveryText3 =  window.document.querySelector('span#deliveryText3')
+
+
+
 /*Chamada por querySelctor para cateringH (Mudança de cor dos titulos nos catering) */
 let cateringH1 = window.document.querySelector('span#cateringH1')
-let cateringH2 = window.document.querySelector('span#cateringH2')
+let cateringH2 = window.document.querySelector('span#cateringH2') //Serviços de catering
 let cateringH3 = window.document.querySelector('span#cateringH3')
+
+let deliveryH1 = window.document.querySelector('span#deliveryH1')
+let deliveryH2 = window.document.querySelector('span#deliveryH2')  //serviços de delivery
+let deliveryH3 = window.document.querySelector('span#deliveryH3')
 
 
 /*Adicionando o Eventos e funções para a primeira div*/
@@ -142,4 +159,47 @@ function mudarParaFoto3(){
 
     cateringH3.style.color = "#000"
     cateringH3.style.transition = '0.5s'
+}
+
+/* ---------------------------------Aqui começa a configuração das funçoes dos serviços de Delivery------------------------------ */
+
+/*Adicionando o Eventos e funções para a primeira div de serviços de delivery*/
+delivery1.addEventListener('mouseover',mudarParaTextoDelivery)
+delivery2.addEventListener('mouseout',mudarParaFotoDelivery)
+
+function mudarParaTextoDelivery(){
+    deliveryFoto1.style.width = '0px'
+    deliveryFoto1.style.hight = '0px'
+    deliveryFoto1.style.opacity = '0'
+    deliveryFoto1.style.border = 'none'
+    deliveryFoto1.style.transition = '0.5s'
+
+
+    deliveryText1.style.fontSize = '13.1pt'
+    deliveryText1.style.backgroundColor = 'rgba(0,0,0,0.7)'
+    deliveryText1.style.transition = '0.3s'
+    deliveryText1.style.width = '290px'
+    deliveryText1.style.hight = '300px'
+    deliveryText1.style.opacity = '1'
+    deliveryText1.style.border = '2px solid #088080'
+
+    deliveryH1.style.color = "#fff"
+    deliveryH1.style.transition = '0.5s'
+
+}
+
+function mudarParaFotoDelivery(){
+    deliveryFoto1.style.width = '290px'
+    deliveryFoto1.style.opacity = '1'
+    deliveryFoto1.style.transition = '0.7s'
+    deliveryFoto1.style.hight = '200px'
+
+    deliveryText1.style.border = 'none'
+    deliveryText1.style.transition = '.3s'
+    deliveryText1.style.width = '290'
+    deliveryText1.style.hight = '0'
+    deliveryText1.style.fontSize = '0px'
+
+    deliveryH1.style.color = "#000"
+    deliveryH1.style.transition = '0.5s'
 }
