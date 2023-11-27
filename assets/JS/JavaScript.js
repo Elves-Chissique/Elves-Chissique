@@ -1,13 +1,21 @@
 
 let catering1 =  window.document.querySelector('span#catering1')
 let catering2 =  window.document.querySelector('span#catering2')
+let catering3 =  window.document.querySelector('span#catering3')
 
+/* Chamada por querySelector para Catering Foto e Texto (Mudança automática de foto e textos)*/
 let cateringFoto =  window.document.querySelector('span#cateringFoto')
 var cateringText =  window.document.querySelector('span#cateringText')
 let cateringFoto2 =  window.document.querySelector('span#cateringFoto2')
 var cateringText2 =  window.document.querySelector('span#cateringText2')
+let cateringFoto3 =  window.document.querySelector('span#cateringFoto3')
+var cateringText3 =  window.document.querySelector('span#cateringText3')
+
+/*Chamada por querySelctor para cateringH (Mudança de cor dos titulos nos catering) */
 let cateringH1 = window.document.querySelector('span#cateringH1')
 let cateringH2 = window.document.querySelector('span#cateringH2')
+let cateringH3 = window.document.querySelector('span#cateringH3')
+
 
 /*Adicionando o Eventos e funções para a primeira div*/
 catering1.addEventListener('mouseover',mudarParaTexto)
@@ -30,7 +38,7 @@ function mudarParaTexto(){
     cateringText.style.opacity = '1'
     cateringText.style.border = '2px solid #088080'
 
-    cateringH1.style.color = "#088080"
+    cateringH1.style.color = "#fff"
     cateringH1.style.transition = '0.5s'
 
 }
@@ -72,7 +80,7 @@ function mudarParaTexto2(){
     cateringText2.style.opacity = '1'
     cateringText2.style.border = '2px solid #088080'
 
-    cateringH2.style.color = "#088080"
+    cateringH2.style.color = "#fff"
     cateringH2.style.transition = '0.5s'
 
 }
@@ -91,4 +99,47 @@ function mudarParaFoto2(){
 
     cateringH2.style.color = "#000"
     cateringH2.style.transition = '0.5s'
+}
+
+
+
+/*Adicionando o Eventos e funções para a terceira div*/
+catering3.addEventListener('mouseover',mudarParaTexto3)
+catering3.addEventListener('mouseout',mudarParaFoto3)
+
+function mudarParaTexto3(){
+    cateringFoto3.style.width = '0px'
+    cateringFoto3.style.hight = '0px'
+    cateringFoto3.style.opacity = '0'
+    cateringFoto3.style.border = 'none'
+    cateringFoto3.style.transition = '0.5s'
+
+
+    cateringText3.style.fontSize = '13.1pt'
+    cateringText3.style.backgroundColor = 'rgba(0,0,0,0.7)'
+    cateringText3.style.transition = '0.3s'
+    cateringText3.style.width = '290px'
+    cateringText3.style.hight = '300px'
+    cateringText3.style.opacity = '1'
+    cateringText3.style.border = '2px solid #088080'
+
+    cateringH3.style.color = "#fff"
+    cateringH3.style.transition = '0.5s'
+
+}
+
+function mudarParaFoto3(){
+    cateringFoto3.style.width = '290px'
+    cateringFoto3.style.opacity = '1'
+    cateringFoto3.style.transition = '0.7s'
+    cateringFoto3.style.hight = '200px'
+
+    cateringText3.style.border = 'none'
+    cateringText3.style.transition = '.3s'
+    cateringText3.style.width = '290'
+    cateringText3.style.hight = '0'
+    cateringText3.style.fontSize = '0px'
+
+    cateringH3.style.color = "#000"
+    cateringH3.style.transition = '0.5s'
 }

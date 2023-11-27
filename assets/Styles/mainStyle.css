@@ -171,7 +171,7 @@ span.catering{
     padding: .2em;
     overflow: hidden;
     position: relative;
-    background-color:#cecece;
+    background-color:#686565;
     margin: 1em;
     align-items: center;
     line-height: 50,50;
@@ -197,7 +197,7 @@ span.catering-foto img{
     opacity: 0;
     text-align: left;
     margin: auto;
-    color: #fff;
+    color: rgb(235, 203, 25);
     font-size: 0px;
     padding: .3em;
     line-height: 1.5em;
