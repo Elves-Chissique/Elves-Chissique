@@ -179,7 +179,7 @@ span.catering{
     
     
 }
-span#cateringFoto img{
+span.catering-foto img{
     text-align: center;
     width: 290px;
     height: 200px;
@@ -190,7 +190,7 @@ span#cateringFoto img{
     display: block;
 }
 
-#cateringText{
+.catering-text{
     display:table;
     width: 290px;
     height: 0px;
@@ -203,6 +203,8 @@ span#cateringFoto img{
     line-height: 1.5em;
 }
 
+
+
 span.h3{
     font-weight: bolder;
     font-family: 'Ephesis', cursive;
@@ -210,10 +212,6 @@ span.h3{
     font-size: 2em;
     color: black;
     transition: .3s;
-}
-
-span.h3:hover{
-    color: #088080;
 }
 
 .beverages{
